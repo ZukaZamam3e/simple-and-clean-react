@@ -7,14 +7,7 @@ interface PageLayoutProps {
 }
 
 export const PageLayout = ({ children }: PageLayoutProps) => (
-  <Box
-    sx={{
-      backgroundImage: "url('./assets/home_bg.png')",
-      backgroundRepeat: "no-repeat",
-      height: 400,
-      width: 400,
-    }}
-  >
+  <Box>
     {/* <NavigationBar /> */}
 
     <br />
