@@ -8,12 +8,19 @@ import {
   Typography,
 } from "@mui/material";
 import { GameModel } from "../../models/GameModel";
+import { useNavigate } from "react-router-dom";
 
 interface GameCardProps {
   game: GameModel;
 }
 
 export const GameCard = (props: GameCardProps) => {
+  const navigate = useNavigate();
+
+  const handleClick = (href: string) => {
+    navigate(href);
+  };
+
   return (
     <Card
       sx={{
@@ -50,8 +57,9 @@ export const GameCard = (props: GameCardProps) => {
                 borderColor: "red",
               },
             }}
+            onClick={() => handleClick(button.href)}
           >
-            {button}
+            {button.name}
           </Button>
         ))}
       </Stack>

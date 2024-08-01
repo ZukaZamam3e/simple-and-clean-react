@@ -7,29 +7,33 @@ export const HomePage = () => {
   const games: GameModel[] = [
     {
       name: "Kingdom Hearts",
-      buttons: ["Synthesis", "Materials", "Treasures", "Trinities", "Puppies"],
-    },
-    {
-      name: "Kingdom Hearts II",
-      buttons: ["Synthesis", "Materials", "Treasures", "Puzzles"],
-    },
-    {
-      name: "Kingdom Hearts: Birth By Sleep",
       buttons: [
-        "Command Melding",
-        "Command Collection",
-        "Treasures",
-        "Stickers",
+        { name: "Synthesis", href: "KHISynthesis" },
+        { name: "Materials", href: "KHIMaterials" },
+        { name: "Treasures", href: "KHITreasures" },
+        { name: "Trinities", href: "KHITrinities" },
+        { name: "Puppies", href: "KHIPuppies" },
       ],
     },
-    {
-      name: "Kingdom Hearts III",
-      buttons: ["Synthesis", "Lucky Emblems", "Treasures", "Classic Kingdom"],
-    },
+    // {
+    //   name: "Kingdom Hearts II",
+    //   buttons: ["Synthesis", "Materials", "Treasures", "Puzzles"],
+    // },
+    // {
+    //   name: "Kingdom Hearts: Birth By Sleep",
+    //   buttons: [
+    //     "Command Melding",
+    //     "Command Collection",
+    //     "Treasures",
+    //     "Stickers",
+    //   ],
+    // },
+    // {
+    //   name: "Kingdom Hearts III",
+    //   buttons: ["Synthesis", "Lucky Emblems", "Treasures", "Classic Kingdom"],
+    // },
   ];
-  // document.body.style.backgroundImage = "url('./assets/home_bg.jpg')";
-  // document.body.style.backgroundRepeat = "no-repeat";
-  // document.body.style.backgroundAttachment = "fixed";
+
   return (
     <Box
       sx={{

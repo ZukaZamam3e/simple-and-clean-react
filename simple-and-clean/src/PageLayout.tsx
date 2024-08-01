@@ -7,12 +7,5 @@ interface PageLayoutProps {
 }
 
 export const PageLayout = ({ children }: PageLayoutProps) => (
-  <Box>
-    {/* <NavigationBar /> */}
-
-    <br />
-    <Container className="app_container" component="main">
-      {children}
-    </Container>
-  </Box>
+  <div style={{ width: "100%" }}>{children}</div>
 );
