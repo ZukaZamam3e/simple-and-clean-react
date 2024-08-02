@@ -7,5 +7,17 @@ interface PageLayoutProps {
 }
 
 export const PageLayout = ({ children }: PageLayoutProps) => (
-  <div style={{ width: "100%" }}>{children}</div>
+  <Container
+    className="app_container"
+    sx={{
+      height: "100vh",
+      p: {
+        xs: 0,
+      },
+    }}
+    component="main"
+    maxWidth={false}
+  >
+    <div style={{ width: "100%" }}>{children}</div>
+  </Container>
 );
